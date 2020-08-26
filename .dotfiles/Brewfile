@@ -1,0 +1,91 @@
+# Coomon taps
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "tree"
+brew "scrcpy"
+brew "hub"
+brew "apktool"
+brew "carthage"
+brew "circleci"
+brew "libusb"
+brew "node"
+brew "nvm"
+brew "rbenv"
+brew "command-not-found"
+
+# App Store Applications
+brew "mas"
+
+mas "Swipes", id: 1008187030
+mas "Dynamo", id: 1445910651
+mas "GarageBand", id: 682658836
+mas "Findings", id: 1361208537
+mas "iMovie", id: 408981434
+mas "Xcode", id: 497799835
+mas "Pages", id: 409201541
+mas "Magnet", id: 441258766
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Simple Git Server", id: 1040403936
+
+# Cask Applications
+tap "homebrew/cask"
+
+cask "0-ad"                        # 0 A.D
+cask "adobe-creative-cloud"        # Adobe Creative Cloud
+cask "advancedrestclient"          # AdvancedRestClient
+cask "altair-graphql-client"       # Altair GraphQL Client
+cask "android-file-transfer"       # Android File Transfer
+cask "android-studio"              # Android Studio
+cask "anki"                        # Anki
+cask "app-cleaner"                 # AppCleaner
+cask "atom"                        # Atom
+cask "authy"                       # Authy Desktop
+cask "db-browser-for-sqlite"       # DB Browser for SQLite
+cask "deepl"                       # DeepL
+cask "discord"                     # Discord
+cask "docker"                      # Docker
+cask "figma"                       # Figma
+cask "firefox"	                   # Firefox
+cask "github"                      # GitHub Desktop
+cask "google-chrome"               # Google Chrome
+cask "intellij-idea"               # IntelliJ IDEA Ultimate
+cask "intellij-idea-ce"            # IntelliJ IDEA CE
+cask "jetbrains-toolbox"           # JetBrains Toolbox
+cask "kap"                         # Kap
+cask "libreelec-usb-sd-creator"    # LibreELEC USB-SD Creator
+cask "paragon-ntfs"                # NTFS for Mac
+cask "onedrive"                    # OneDrive
+cask "dropbox"                     # Dropbox
+cask "opera"                       # Opera
+cask "raspberry-pi-imager"         # Raspberry Pi Imager
+cask "sdformatter"                 # SD Card Formatter
+cask "skype"                       # Skype
+cask "slack"                       # Slack
+cask "spotify"                     # Spotify
+cask "steam"                       # Steam
+cask "teamviewer"                  # TeamViewer
+cask "tor-browser"                 # Tor Browser
+cask "vlc"                         # VLC
+cask "virtualbox"                  # Oracle VirtualBox
+cask "virtualbox-extension-pack"   # Oracle VirtualBox Extension Pack
+cask "visual-studio-code"          # Visual Studio Code
+cask "zeplin"                      # Zeplin
+cask "zoomus"                      # zoom.us
+
+
+# Fonts
+tap "homebrew/cask-fonts"
+
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-montserrat"
+cask "font-open-sans"
+cask "font-open-sans-condensed"
+cask "font-orbitron"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-slab"
+cask "font-roboto-mono-nerd-font"

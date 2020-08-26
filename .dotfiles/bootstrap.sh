@@ -1,7 +1,11 @@
 #! /bin/zsh
-# Requirements: git, GitHub SSH key Setup
 
-# Setup .dotfiles
+# Ask for admin password
+sudo -v
+# Keep the sudo timestamp until the script is finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Clone & configure .dotfiles repository
 git clone --bare git@github.com:aruke/.dotfiles.git $HOME/.dotfiles
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
@@ -16,3 +20,6 @@ if [ $? = 0 ]; then
 fi;
 dotfiles checkout
 dotfiles config status.showUntrackedFiles no
+
+# Setup Homebrew & Cask
+zsh .dotfiles/brew.sh
