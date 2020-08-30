@@ -1,12 +1,13 @@
 #! /bin/zsh
 
+# Path to your oh-my-zsh installation.
+pwd
+export ZSH=".oh-my-zsh"
+
 # Export env variables from another file
 source ~/.zshenv
 source ~/.zsh_aliases
 source ~/.zsh_secrets
-
-# Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
