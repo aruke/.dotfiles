@@ -21,5 +21,9 @@ fi;
 dotfiles checkout
 dotfiles config status.showUntrackedFiles no
 
+# Oh-my-zsh installation
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+# Restart shell?
+
 # Setup Homebrew & Cask
-zsh .dotfiles/brew.sh
+CI=1 zsh .dotfiles/brew.sh
