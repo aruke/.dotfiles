@@ -1,7 +1,6 @@
 #! /bin/zsh
 
 # Path to your oh-my-zsh installation.
-pwd
 export ZSH=".oh-my-zsh"
 
 # Export env variables from another file
