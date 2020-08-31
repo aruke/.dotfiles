@@ -5,6 +5,9 @@ sudo -v
 # Keep the sudo timestamp until the script is finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Command Line Developer tools are needed for next installs
+/bin/zsh  install_command_line_tools.sh
+
 # Clone & configure .dotfiles repository
 git clone --bare git@github.com:aruke/.dotfiles.git $HOME/.dotfiles
 function dotfiles {
@@ -29,4 +32,4 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 CI=1 zsh .dotfiles/brew.sh
 
 # Setup MacOS defaults
-/zsh/bin .dotfiles/.macos
+/bin/zsh .dotfiles/.macos
