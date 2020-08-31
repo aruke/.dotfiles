@@ -9,7 +9,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 /bin/zsh  install_command_line_tools.sh
 
 # Clone & configure .dotfiles repository
-git clone --bare git@github.com:aruke/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/aruke/.dotfiles.git $HOME/.dotfiles
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
