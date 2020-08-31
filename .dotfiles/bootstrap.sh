@@ -27,3 +27,6 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 # Setup Homebrew & Cask
 CI=1 zsh .dotfiles/brew.sh
+
+# Setup MacOS defaults
+/zsh/bin .dotfiles/.macos
