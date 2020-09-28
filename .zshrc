@@ -1,7 +1,7 @@
 #! /bin/zsh
 
 # Path to your oh-my-zsh installation.
-export ZSH=".oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Export env variables from another file
 source ~/.zshenv
@@ -101,3 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Brew's command-not-found package
+HB_CNF_HANDLER="$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+source "$HB_CNF_HANDLER";
+fi

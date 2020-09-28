@@ -2,6 +2,7 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "homebrew/command-not-found"
 
 brew "tree"
 brew "scrcpy"
@@ -13,12 +14,11 @@ brew "libusb"
 brew "node"
 brew "nvm"
 brew "rbenv"
-brew "command-not-found"
+brew "svn" # Required for some fonts
 
 # App Store Applications
 brew "mas"
 
-mas "Swipes", id: 1008187030
 mas "Dynamo", id: 1445910651
 mas "GarageBand", id: 682658836
 mas "Findings", id: 1361208537
@@ -29,6 +29,7 @@ mas "Magnet", id: 441258766
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Simple Git Server", id: 1040403936
+mas "OneDrive", id: 823766827
 
 # Cask Applications
 tap "homebrew/cask"
@@ -36,7 +37,6 @@ tap "homebrew/cask"
 cask "0-ad"                        # 0 A.D
 cask "adobe-creative-cloud"        # Adobe Creative Cloud
 cask "advancedrestclient"          # AdvancedRestClient
-cask "altair-graphql-client"       # Altair GraphQL Client
 cask "android-file-transfer"       # Android File Transfer
 cask "android-studio"              # Android Studio
 cask "anki"                        # Anki
@@ -69,12 +69,9 @@ cask "steam"                       # Steam
 cask "teamviewer"                  # TeamViewer
 cask "tor-browser"                 # Tor Browser
 cask "vlc"                         # VLC
-cask "virtualbox"                  # Oracle VirtualBox
-cask "virtualbox-extension-pack"   # Oracle VirtualBox Extension Pack
 cask "visual-studio-code"          # Visual Studio Code
 cask "zeplin"                      # Zeplin
 cask "zoomus"                      # zoom.us
-
 
 # Fonts
 tap "homebrew/cask-fonts"

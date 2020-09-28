@@ -26,7 +26,9 @@ dotfiles config status.showUntrackedFiles no
 
 # Oh-my-zsh installation
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-# Restart shell?
+# Change owner of problematic directories
+chown -R $USER /usr/local/share/zsh
+chown -R $USER /usr/local/share/zsh/site-functions
 
 # Setup Homebrew & Cask
 CI=1 zsh .dotfiles/brew.sh
